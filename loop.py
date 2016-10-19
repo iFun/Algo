@@ -14,8 +14,8 @@ def binarySearch (sorted,target,left,right):
 
     return False
 
-haha = range(1,101)
-if binarySearch(haha,1,0,len(haha)-1):
+haha = range(1,100000001)
+if binarySearch(haha,1000,0,len(haha)-1):
     print('found it')
 else:
     print('did not found the number ')
