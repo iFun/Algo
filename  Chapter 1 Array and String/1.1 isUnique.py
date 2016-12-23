@@ -1,6 +1,5 @@
 # check if string has all unique characters no additional data structure
 
-import unittest
 
 def solution(arg):
     if len(arg) == 0:
