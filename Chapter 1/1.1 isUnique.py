@@ -2,13 +2,18 @@
 
 import unittest
 
-def solution(input):
-    if len(input) == 0:
+def solution(arg):
+    if len(arg) == 0:
         return True
-    strarry = sorted(input)
-    for i in xrange(0,len(strarry) - 1):
-        if strarry[i] == strarry[i+1]:
+    if len(arg) > 128:
+        return False
+    hashTable = [False] * 128
+
+    for i in xrange(0,len(arg)):
+        tmp = ord(arg[i])
+        if(hashTable[tmp]):
             return False
+        hashTable[tmp] = True
     return True
 
 
