@@ -35,7 +35,7 @@ def test():
     assert (solution('aed','asd') == True),"wrong"
     assert (solution('aee','asd') == False),"wrong"
     assert (solution('dfsjklsvaasd','dfjklsvb') == False),"wrong"
-    assert (solution('acde1','acde1') == True),"wrong"
+    assert (solution('acde','acde1') == True),"wrong"
     print 'all passed'
 
 test()
