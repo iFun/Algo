@@ -2,7 +2,6 @@ matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 
 
 def solution():
-    
 
     for layer in xrange(0,len(matrix)):
         first = layer
@@ -20,10 +19,8 @@ def solution():
     return matrix
 
 def printMatrix():
-    print matrix[0]
-    print matrix[1]
-    print matrix[2]
-    print matrix[3]
+    for x in xrange(0,len(matrix)):
+         print matrix[x]
     print ''
 
 
