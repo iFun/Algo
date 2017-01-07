@@ -1,3 +1,9 @@
+# 1 remove duplicate from an unsorted linked list
+# 2 return kth to last implement ana lgorithm to find the   last element
+# 3 delete middle node delete a node with only access to that node
+# 6 check if a linked list is a palindrome
+
+
 class node:
  
     def __init__(self):
