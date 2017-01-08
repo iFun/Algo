@@ -29,6 +29,15 @@ class linked_list:
             print (str(cur_node.data) + '->'),
             cur_node = cur_node.next
         print ''
+    def find_node(self,data):
+        cur_node = self.head
+
+        while cur_node:
+            if cur_node.data == data:
+                return True
+            else:
+                cur_node = cur_node.next
+        return False
 
 
 
