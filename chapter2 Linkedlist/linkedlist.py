@@ -1,3 +1,5 @@
+from random import randint
+
 class node:
  
     def __init__(self):
@@ -38,7 +40,11 @@ class linked_list:
             else:
                 cur_node = cur_node.next
         return False
-
+    def generateList(self, length):
+        if length < 1:
+            return None
+        for x in xrange(0,length):
+            self.add_node(randint(0,20))
 
 
 

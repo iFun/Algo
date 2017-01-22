@@ -11,7 +11,6 @@ for x in xrange(0,11):
 def main():
     k = 4
 
-
     fast_node = ll.head
     slow_node = ll.head
     for x in xrange(0,k):
