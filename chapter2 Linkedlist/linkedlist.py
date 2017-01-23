@@ -44,7 +44,7 @@ class linked_list:
         if length < 1:
             return None
         for x in xrange(0,length):
-            self.add_node(randint(0,20))
+            self.add_node(randint(0,9))
 
 
 
