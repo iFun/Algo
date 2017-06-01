@@ -1,3 +1,1 @@
-# learn_python_the_hard_way
-
-## Hard way is the easier way
+# not yet finished
