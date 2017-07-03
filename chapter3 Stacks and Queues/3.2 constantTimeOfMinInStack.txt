@@ -1,0 +1,9 @@
+solution
+
+using another stack
+
+push to the stack if its smaller than current min
+pop the stack if min is equal to the current poping value
+
+use peak to determine the min value in the stack
+
