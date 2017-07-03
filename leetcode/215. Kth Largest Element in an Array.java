@@ -1,5 +1,6 @@
 public class Solution {
   public int findKthLargest(int[] nums, int k) {
+    shuffle(nums);
     return quickSelect(nums, 0, nums.length - 1, k);
   }
 
@@ -33,5 +34,14 @@ public class Solution {
     int tmp = nums[a];
     nums[a] = nums[b];
     nums[b] = tmp;
+  }
+
+  private void shuffle(int a[]) {
+
+        final Random random = new Random();
+        for(int ind = 1; ind < a.length; ind++) {
+            final int r = random.nextInt(ind + 1);
+            swap(a, ind, r);
+        }
   }
 }
