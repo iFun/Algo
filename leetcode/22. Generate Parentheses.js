@@ -15,10 +15,10 @@ function backtrack (open,close,str,max, result){
     }
     
     if(open < max){
-        generate(open+1, close, str+"(", max, result);
+        backtrack(open+1, close, str+"(", max, result);
     }
     if(close < open){
-        generate(open, close+1, str+")", max, result);
+        backtrack(open, close+1, str+")", max, result);
     }
     return;
 }
